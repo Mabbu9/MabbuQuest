@@ -2,7 +2,7 @@ require('./server/js/main');
 
 var connect = require('connect');
 var app = connect();
-var port = 80;
+var port = 8080;
 
 // Display incoming requests, coloured for status
 app.use(connect.logger('dev'));
