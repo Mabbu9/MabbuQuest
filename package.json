@@ -1,9 +1,32 @@
 {
-    "name": "BrowserQuest"
-  , "version": "0.0.1"
-  , "private": false
-  , "dependencies": {
-    "underscore": "<1.4.0"
+  "name": "MabbuQuest",
+  "version": "0.0.1",
+  "description": "MabbuQuest",
+  "keywords": [
+    "MabbuQuest",
+    "Node.js",
+    "BrowserQuest",
+    "openshift"
+  ],
+  "private":false,
+  "author": {
+    "name": "Mabbu9",
+    "email": "admin@mabbu9.com",
+    "url":  "http://www.mabbu9.com/"
+  },
+  "homepage": "http://mabbu9.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/Mabbu9/MabbuQuest/"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+      "underscore": "<1.4.0"
     , "log": ">0"
     , "bison": ">0"
     , "websocket": ">0"
@@ -12,5 +35,10 @@
     , "semver": ">0"
     , "memcache": ">0"
     , "connect": ">2"
-  }
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "main": "app.js"
+>>>>>>> ee62d0e20da903c2d106c542a5ae89385277b65a
 }
