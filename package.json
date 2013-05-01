@@ -38,7 +38,5 @@
   },
   "devDependencies": {},
   "bundleDependencies": [],
-
   "main": "app.js"
->>>>>>> ee62d0e20da903c2d106c542a5ae89385277b65a
 }
