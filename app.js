@@ -11,7 +11,7 @@ var port      = process.env.OPENSHIFT_INTERNAL_PORT || 8080;
             //  allows us to run/test the app locally.
             console.warn('No OPENSHIFT_INTERNAL_IP var, using 127.0.0.1');
             ipaddress = "127.0.0.1";
-
+		}
 
 // Display incoming requests, coloured for status
 app.use(connect.logger('dev'));
@@ -24,6 +24,6 @@ app.use(connect.static('client'));
 app.use(function(err, req, res, next){});
 
 // The tcp port to listen on
-app.listen(port);
+app.listen(port,ipaddress);
 
 console.log('MabbuQuest client server started on port '+port);
