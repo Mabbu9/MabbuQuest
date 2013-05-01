@@ -443,8 +443,8 @@ footer, header, hgroup, menu, nav, section {
 	    .upscaled #achievements, .upscaled #achievements li, .upscaled .coin, .upscaled #achievement-notification, .upscaled #coinsparks, .upscaled .achievement-sharing a, .upscaled #previous, .upscaled #next {background:url('../img/3/achievements.png');}
 	    
 	    
-        body {background:-moz-radial-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1) 125%), url('../img/1/wood2.png') no-repeat 1587px 138px, url('../img/1/wood2.png') no-repeat 51px 519px, url('../img/1/wood3.png') no-repeat 228px 219px, url('../img/1/wood.png') repeat, #000; background-size:auto, 15px auto, 15px auto, 60px auto, 384px;}
-        body {background:-webkit-gradient(radial, center center, 360, center center, 1200, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('../img/3/wood2.png') no-repeat 1587px 138px, url('../img/3/wood2.png') no-repeat 51px 519px, url('../img/3/wood3.png') no-repeat 228px 219px, url('../img/3/wood.png') repeat, #000; background-size:auto, 15px auto, 15px auto, 60px auto, 384px;}
+        body {background:-moz-radial-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1) 125%), url('../img/common/cloud.png') no-repeat 1587px 138px, url('../img/common/cloud.png') no-repeat 51px 519px, url('../img/common/cloud.png') no-repeat 228px 219px, url('../img/common/cloudbg.png') repeat, #000; background-size:auto, 15px auto, 15px auto, 60px auto, 384px;}
+        body {background:-webkit-gradient(radial, center center, 360, center center, 1200, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('../img/common/cloud.png') no-repeat 1587px 138px, url('../img/common/cloud.png') no-repeat 51px 519px, url('../img/common/cloud.png') no-repeat 228px 219px, url('../img/common/cloudbg.png') repeat, #000; background-size:auto, 15px auto, 15px auto, 60px auto, 384px;}
         #logo, #logosparks, .left-ornament, .right-ornament, #character, #character div, .button, .button div, #respawn, #scroll, #instructions, .icon, .avatar, .close, #note, .ribbon .top, .ribbon .bottom, #about .img, .ext-link {background-size:1266px auto;}
         #logo {height:126px;width:687px;position:absolute;top:10%;left:50%;margin-left:-344px;z-index:3;}
         #logosparks {width:687px;height:126px;z-index:4;-moz-animation:logo3 .8s steps(6, end) infinite;-webkit-animation:logo3 .8s steps(6, end) infinite;-o-animation:logo3 .8s steps(6, end) infinite;-ms-animation:logo3 .8s steps(6, end) infinite;}
@@ -604,8 +604,8 @@ footer, header, hgroup, menu, nav, section {
 	    .upscaled #bar-container, .upscaled #healthbar, .upscaled .barbutton, .upscaled #chatbox, .upscaled #population div{background-image:url('../img/2/barsheet.png');}
 	    .upscaled #achievements, .upscaled #achievements li, .upscaled .coin, .upscaled #achievement-notification, .upscaled #coinsparks, .upscaled .achievement-sharing a, .upscaled #previous, .upscaled #next {background:url('../img/2/achievements.png');}
 
-        body {background:-moz-radial-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1) 125%), url('../img/1/wood.png') repeat, #000; background-size:auto, 256px;}        
-        body {background:-webkit-gradient(radial, center center, 240, center center, 800, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('../img/2/wood.png') repeat, #000; background-size:auto, 256px;}
+        body {background:-moz-radial-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1) 125%), url('../img/common/cloudbg.png') repeat, #000; background-size:auto, 256px;}        
+        body {background:-webkit-gradient(radial, center center, 240, center center, 800, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('../img/common/cloudbg.png') repeat, #000; background-size:auto, 256px;}
         #logo, #logosparks, .left-ornament, .right-ornament, #character, #character div, .button, .button div, #respawn, #scroll, #instructions, .icon, .avatar, .close, #note, .ribbon .top, .ribbon .bottom, #about .img, .ext-link {background-size:844px auto;}
         #logo {height:84px;width:458px;position:absolute;top:10%;left:50%;margin-left:-229px;z-index:3;}
         #logosparks {width:458px;height:84px;z-index:4;-moz-animation:logo2 .8s steps(6, end) infinite;-webkit-animation:logo2 .8s steps(6, end) infinite;-o-animation:logo2 .8s steps(6, end) infinite;-ms-animation:logo2 .8s steps(6, end) infinite;}
@@ -770,8 +770,8 @@ footer, header, hgroup, menu, nav, section {
 	@media screen and (max-width: 1000px) {
 
         canvas {image-rendering:optimizeSpeed;}
-        body {background:-moz-radial-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1) 125%), url('../img/1/wood.png') repeat, #000; background-size:auto, 128px;}
-        body {background:-webkit-gradient(radial, center center, 200, center center, 600, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('../img/1/wood.png') repeat, #000; background-size:auto, 128px;}
+        body {background:-moz-radial-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1) 125%), url('../img/common/cloudbg.png') repeat, #000; background-size:auto, 128px;}
+        body {background:-webkit-gradient(radial, center center, 200, center center, 600, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('../img/common/cloudbg.png') repeat, #000; background-size:auto, 128px;}
         #logo, #logosparks, .left-ornament, .right-ornament, #character, #character div, .button, .button div, #respawn, #scroll, #instructions, .icon, .avatar, .close, #note, .ribbon .top, .ribbon .bottom, #about .img, .ext-link {background-size:422px auto;}
         #logo {height:42px;width:229px;position:absolute;top:10%;left:50%;margin-left:-114px;z-index:3;}
         #logosparks {width:229px;height:42px;z-index:4;-moz-animation:logo1 .8s steps(6, end) infinite;-webkit-animation:logo1 .8s steps(6, end) infinite;-o-animation:logo1 .8s steps(6, end) infinite;-ms-animation:logo1 .8s steps(6, end) infinite;}
