@@ -1,3 +1,5 @@
+require('./server/js/main');
+
 var connect = require('connect');
 var app = connect();
 var port = 8080;
