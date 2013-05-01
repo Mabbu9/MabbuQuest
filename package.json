@@ -8,7 +8,7 @@
     "BrowserQuest",
     "openshift"
   ],
-  "private":false,
+  "private":true,
   "author": {
     "name": "Mabbu9",
     "email": "admin@mabbu9.com",
