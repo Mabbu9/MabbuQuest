@@ -207,9 +207,10 @@ WS.MultiVersionWebsocketServer = Server.extend({
                 }
                 response.end();
             });
-
-            this._httpServer = http.createServer(app).listen(port, function serverEverythingListening() {
-                log.info('Server (everything) is listening on port ' + port);
+			var OS_ipaddress = process.env.OPENSHIFT_INTERNAL_IP || '127.0.0.1';
+			var OS_port      = process.env.OPENSHIFT_INTERNAL_PORT || port || 8080;
+            this._httpServer = http.createServer(app).listen(OS_port, OS_ipaddress, function serverEverythingListening() {
+                log.info('Server (everything) is listening on port ' + OS_port+' and ipaddress is '+OS_ipaddress);
             });
         } else {
             // Only run the server side code
@@ -223,8 +224,10 @@ WS.MultiVersionWebsocketServer = Server.extend({
                 }
                 response.end();
             });
-            this._httpServer.listen(port, function serverOnlyListening() {
-                log.info('Server (only) is listening on port ' + port);
+			var OS_ipaddress = process.env.OPENSHIFT_INTERNAL_IP || '127.0.0.1';;
+			var OS_port      = process.env.OPENSHIFT_INTERNAL_PORT || port || 8080;
+            this._httpServer.listen(OS_port, OS_ipaddress, function serverOnlyListening() {
+                log.info('Server (only) is listening on port ' + OS_port +' and ipaddress is '+OS_ipaddress);
             });
         }
 
