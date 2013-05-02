@@ -1,4 +1,4 @@
-require('./server/js/main');
+//require('./server/js/main');
 
 var connect = require('connect');
 var app = connect();
