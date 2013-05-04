@@ -283,7 +283,7 @@ define(['jquery', 'app', 'entrypoint'], function($, App, EntryPoint) {
 
             app.initHealthBar();
 
-            $('#nameinput').attr('value', '');
+            
             $('#chatbox').attr('value', '');
 
             if(game.renderer.mobile || game.renderer.tablet) {
@@ -494,19 +494,9 @@ define(['jquery', 'app', 'entrypoint'], function($, App, EntryPoint) {
                 }
             });
 
-            $('#nameinput').focusin(function() {
-                $('#name-tooltip').addClass('visible');
-            });
+           
 
-            $('#nameinput').focusout(function() {
-                $('#name-tooltip').removeClass('visible');
-            });
-
-            $('#nameinput').keypress(function(event) {
-                var $name = $('#nameinput'),
-                    name = $name.attr('value');
-
-                $('#name-tooltip').removeClass('visible');
+            
 
                 if(event.keyCode === 13) {
                     if(name !== '') {
