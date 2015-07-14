@@ -2,13 +2,13 @@ var _ = require('underscore');
 var BISON = require('bison');
 var cls = require('./lib/class');
 var http = require('http');
-var miksagoConnection = require('websocket-server/lib/ws/connection');
+var miksagoConnection = require('node-websocket-server/lib/ws/connection');
 var url = require('url');
 var useBison = false;
 var Utils = require('./utils');
 var worlizeRequest = require('websocket').request;
 var WS = {};
-var wsServer = require('websocket-server');
+var wsServer = require('node-websocket-server');
 
 module.exports = WS;
 
@@ -207,7 +207,7 @@ WS.MultiVersionWebsocketServer = Server.extend({
                 }
                 response.end();
             });
-			var OS_ipaddress = process.env.OPENSHIFT_INTERNAL_IP || '127.0.0.1';
+			var OS_ipaddress = process.env.OPENSHIFT_INTERNAL_IP || '0.0.0.0' || '127.0.0.1';
 			var OS_port      = process.env.OPENSHIFT_INTERNAL_PORT || port || 8080;
 			//var OS_port = 8000;
             this._httpServer = http.createServer(app).listen(OS_port, OS_ipaddress, function serverEverythingListening() {
@@ -225,7 +225,7 @@ WS.MultiVersionWebsocketServer = Server.extend({
                 }
                 response.end();
             });
-			var OS_ipaddress = process.env.OPENSHIFT_INTERNAL_IP || '127.0.0.1';
+			var OS_ipaddress = process.env.OPENSHIFT_INTERNAL_IP || '0.0.0.0' || '127.0.0.1';
 			var OS_port      = process.env.OPENSHIFT_INTERNAL_PORT || port || 8080;
 			//var OS_port = 8000;
             this._httpServer.listen(OS_port, OS_ipaddress, function serverOnlyListening() {

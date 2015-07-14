@@ -1,5 +1,5 @@
 {
-    "host": "mabbuquest-mabbu9.rhcloud.com",
-    "port": 8000,
+    "host": "gs1.mb9.co",
+    "port": 8080,
     "dispatcher": false
 }
